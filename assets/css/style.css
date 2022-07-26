@@ -1,0 +1,44 @@
+/* 
+Befehl zum starten von SCSS
+Eingabe: sass --watch (pfad zur main.scss) (pfad zur style.css)
+
+sass --watch assets/scss/main.scss assets/css/style.css */
+
+/* 
+##################################
+        GENERAL
+##################################
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* 
+##################################
+        HEADER
+##################################
+*/
+
+
+/* 
+##################################
+        MAIN
+##################################
+*/
+
+/* 
+##################################
+        FOOTER
+##################################
+*/

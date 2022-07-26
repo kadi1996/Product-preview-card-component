@@ -1,0 +1,115 @@
+// ## GENERAL ##
+
+// ### Color
+
+$green: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$dark: hsl(212, 21%, 14%);
+$white: hsl(0, 0%, 100%);
+$grayish: hsl(228, 12%, 48%);
+
+// ### Font 
+
+// font-family: 'Fraunces', serif;
+// font-family: 'Montserrat', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+$fraunces: 'Fraunces', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+// ## MAIN ##
+
+body {
+    background: $cream;
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10rem 25%;
+        border-radius: 20px;
+
+        #sectionOne {
+            img {
+                width: 100%;
+                display: block;
+                margin-left: auto;
+            }
+        }
+
+        #sectionTwo {
+            background: $white;
+            padding-left: 15%;
+            padding-top: 10px;
+
+            #headline {
+                color: $grayish;
+                letter-spacing: 5px;
+                font-family: $montserrat;
+                font-weight: 500;
+                font-size: 13px;
+            }
+
+            h1 {
+                color: $dark;
+                font-family: $fraunces;
+                font-size: 35px;
+                padding-right: 20%;
+            }
+
+            h2 {
+                color: $grayish;
+                font-family: $montserrat;
+                font-size: 13px;
+                font-weight: 500;
+                padding-right: 30%;
+                line-height: 2;
+            }
+
+            div {
+                display: flex;
+
+                #price {
+                    color: $green;
+                    font-family: $fraunces;
+                    font-size: 30px;
+                }
+
+                #discount {
+                    color: $grayish;
+                    text-decoration: line-through;
+                    font-size: 13px;
+                    padding: 27px 0 0 10%;
+                }
+            }
+
+            article {
+                background: $green;
+                border-radius: 10px;
+                padding: 15px 10%;
+                margin-right: 27%;
+                margin-bottom: 2rem;
+
+                &:hover {
+                    box-shadow: inset 3px 3px 3px;
+                    transition: all 500ms ease;
+                }
+
+                img {
+                    padding-right: 7px;
+                    padding-left: 15%;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-family: $montserrat;
+
+
+                }
+            }
+
+
+        }
+    }
+}
